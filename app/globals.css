@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --bg:         #07100a;
+  --surface:    #0d1a0f;
+  --surface2:   #122016;
+  --border:     rgba(163, 230, 53, 0.12);
+  --border2:    rgba(163, 230, 53, 0.22);
+  --lime:       #a3e635;
+  --lime-dim:   rgba(163, 230, 53, 0.10);
+  --lime-dim2:  rgba(163, 230, 53, 0.18);
+  --lemon:      #fde047;
+  --lemon-dim:  rgba(253, 224, 71, 0.10);
+  --text:       #dff0d0;
+  --text-dim:   rgba(223, 240, 208, 0.55);
+  --text-muted: rgba(223, 240, 208, 0.3);
+  --red:        #f87171;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* wallet adapter overrides */
+.wallet-adapter-button {
+  background: var(--lime-dim) !important;
+  border: 1px solid var(--border2) !important;
+  color: var(--lime) !important;
+  font-size: 13px !important;
+  height: 38px !important;
+  padding: 0 16px !important;
+  border-radius: 6px !important;
+  font-family: inherit !important;
+  font-weight: 500 !important;
+}
+.wallet-adapter-button:not([disabled]):hover {
+  background: rgba(163,230,53,0.2) !important;
+}
+.wallet-adapter-modal-wrapper {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 12px !important;
+}
+.wallet-adapter-modal-title { color: var(--text) !important; font-size: 18px !important; }
+.wallet-adapter-modal-list li { border-radius: 8px !important; }
+.wallet-adapter-modal-list .wallet-adapter-button { justify-content: flex-start !important; }
